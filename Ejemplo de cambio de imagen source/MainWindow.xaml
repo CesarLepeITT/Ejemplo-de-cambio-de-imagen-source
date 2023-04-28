@@ -1,0 +1,37 @@
+﻿<Window x:Class="Ejemplo_de_cambio_de_imagen_source.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejemplo_de_cambio_de_imagen_source"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        
+        <!-- Esta es la imagen de nombre -->
+        <Image 
+            x:Name="Waifu"
+            Width="200"
+            HorizontalAlignment="Left" Margin="514,0,0,0"
+               >
+            <!-- Este es el source de la imagen -->
+            <Image.Source>
+                <!-- Este es eñl bitmap que carga originalmete-->
+                <BitmapImage 
+                    x:Name="myBitMapWaifu"
+                    DecodePixelWidth="200"  
+                    UriSource="C:\Users\TecNM-ITT\source\repos\Ejemplo de cambio de imagen source\Ejemplo de cambio de imagen source\recursos\waifu1.jpg" />
+            </Image.Source>
+        </Image>
+        
+        <!-- Boton que cambia la waifu al click-->
+        <Button 
+            Content="Cambiar waifu" 
+            HorizontalAlignment="Left" 
+            Margin="130,149,0,0" 
+            VerticalAlignment="Top" 
+            Height="127" 
+            Width="270" 
+            Click="Button_Click"/>
+    </Grid>
+</Window>
